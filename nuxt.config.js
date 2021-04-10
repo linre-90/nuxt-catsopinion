@@ -112,7 +112,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:3000' || process.env.BASE_URL
+    baseURL: 'http://localhost:3000'
   },
 
   publicRuntimeConfig:{
@@ -120,7 +120,8 @@ export default {
     newsEn: process.env.NEWS_EN,
     messageCollection: process.env.MESSAGE_COLLECTION,
     blogEn: process.env.EN_BLOGPOSTS,
-    blogFi: process.env.FI_BLOGPOSTS
+    blogFi: process.env.FI_BLOGPOSTS,
+    baseURL: process.env.BASE_URL
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
