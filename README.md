@@ -5,7 +5,9 @@
 SEO was so bad with pure vue SPA application no matter whati did, so i desided to try nuxt SSR. 
 <br><br>
 
-<u>Results were pretty good Google ligthouse SEO score pumped up from 65 -> 95.</u>
+<u>Results were pretty good Google ligthouse SEO score pumped up from 85 -> 95.</u><br><br>
+<u>Efficient jumped from 76 -> 89.</u>
+Entire test runned much more quiker with nuxt version than vue.
 Without any adjustment to meta, texts, headers etc. Vue version was alredy using vue meta.
 
 <br><br>
@@ -13,7 +15,7 @@ Also i love to seperate stuff to frontend and backend, im a huge API (and cloud 
 
 ## How was it?
 
-Oh dear... It was not a walk in the park. I started by copying all vue stuff to nuxt components, store, scripts, views as pages etc. Basically **i dit error driven deveploment**, fixing error, after error, after error, until there were no more errors. Vue to nuxt requires lot of patience, judgement and if your project is big and complex (mine is small) it propably is not worth it. Start from scratch and build project from ground up, use what you can on the way.
+Oh dear... It was not a walk in the park. I started by copying all vue stuff to nuxt components, store, scripts, views as pages etc. Basically **i dit error driven deveploment**, fixing error, after error, after error, until there were no more errors. Vue to nuxt requires lot of patience, judgement and if your project is big and complex (mine is small) it propably is not worth it. Start from scratch and build project from ground up, use what you can on the way. **With nuxt you will find some annoying gotcha's but nothing is perfect, over all nuxt.js is really great option!**
 <br><br>
 
 ### Data fetching
@@ -39,7 +41,7 @@ I had a **lot issues with components not updating on data change**. I think it w
 
 ## What i really liked!
 
-**Plugins, middleware and server-middleware!** God these things are awesome. No more api key fear and if you are using seperate backend or cloud functions you can create api in nuxt which "hides" your true backend from client side. Or if you don't have a lot backend use nuxt also as backend service with api points or middleware. This also removes corse errors... **There is lot of possibilities compared to basic vue app, this is the power of nuxt.** 
+**Plugins, middleware and server-middleware!** God these things are awesome. No more api key fear and if you are using seperate backend or cloud functions you can create api in nuxt which "hides" your true backend from client side. Or if you don't have a lot backend use nuxt also as backend service with api points or middleware. **IMPORTANT: ALWAYS SET UP AXIOS PROXY, CALL TO SERVER-MIDDLEWARE IS CROSS DOMAIN REQUEST**. I dont completely understand why, but i have theory. For some reason (propably nuxt reasons) server lives at localhost (at least server middleware does), however browser lives at catsopinion domain and expects catsopinion response but instead gets localhost as origin. In dev mode this is not problem because you access both browser and server from localhost (i totally missed whole thing). I don't know if there is own "server" for server middleware or nuxt runs some special configuration that results to this. But in the end axios calls even to own server has to be proxyed. *If someone smarter and more experienced reads this at some point please explain this to me, so i will not be noob anymore:)* **There is lot of possibilities compared to basic vue app, this is the power of nuxt.** 
 
 ## Conclusion
 
