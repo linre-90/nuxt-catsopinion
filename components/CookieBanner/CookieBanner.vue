@@ -21,7 +21,7 @@ export default {
             this.$cookies.set("cookieConsent", true,{
                 path: "*",
                 maxAge: 60*60*24*7,
-                sameSite: true
+                sameSite: "lax"
             });
             this.$emit("cookieOk");
         },

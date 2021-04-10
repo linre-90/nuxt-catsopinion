@@ -11,14 +11,14 @@ export default function ({app}){
         app.$cookies.set("appid", appid,{
             path: "*",
             maxAge: 60*60*24,
-            sameSite: true
+            sameSite: "lax"
         });
     }
     if(typeof app.$cookies.get("cookieConsent") === "undefined"){
         app.$cookies.set("cookieConsent", false,{
             path: "*",
             maxAge: 60*60*24*7,
-            sameSite: true
+            sameSite: "lax"
         });
     }
 }
