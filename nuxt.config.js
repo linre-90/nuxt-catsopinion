@@ -124,7 +124,9 @@ export default {
     
   },
   privateRuntimeConfig:{
-    baseURL: process.env.BASE_URL
+    axios:{
+      baseURL: process.env.BASE_URL
+    }
   },
   
 
