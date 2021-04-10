@@ -10,7 +10,7 @@
                     { text: 'Contact', url: 'contact', routerLink: true },
                     { text: 'Appz', url: 'appz', routerLink: true },
                     {text: 'Privacy policy',url: 'privacypolicy',routerLink: true,},
-                    {text: 'Github frontend', url: 'https://github.com/linre-90/catsopinion-frontend', routerLink: false,},
+                    {text: 'Github frontend', url: 'https://github.com/linre-90/nuxt-catsopinion', routerLink: false,},
                 ]"
                 v-bind:socialMedia="[]"
             />
