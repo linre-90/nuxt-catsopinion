@@ -17,6 +17,7 @@ app.post('/', async (req, res) => {
             url: process.env.LOGGER_API
         }
         axios(options);
+        res.set("Access-Control-Allow-Origin", process.env.URL);
         res.sendStatus(200);
     }
 })
