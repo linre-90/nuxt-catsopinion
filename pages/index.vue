@@ -58,7 +58,9 @@ export default {
             "link": "",
             "detail": "",
             "cookies": this.$cookies.get("cookieConsent")
-        },{params:{"appid": this.$cookies.get("appid")}}).then();
+        },{
+            params:{"appid": this.$cookies.get("appid")},
+        }).then();
     },
     async fetch(){
         let data = await this.$queryFullCollection({collection: "news", locale: this.$i18n.locale});

@@ -17,7 +17,6 @@ app.post('/', async (req, res) => {
         }
         const response = await axios(options);
         res.json(response.data);
-    
 });
 
 module.exports = app

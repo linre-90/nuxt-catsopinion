@@ -111,7 +111,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'http://localhost:3000' || process.env.BASE_URL
+  },
 
   publicRuntimeConfig:{
     newsFi: process.env.NEWS_FI,
