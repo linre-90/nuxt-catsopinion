@@ -90,6 +90,4 @@ sw.*
 *.swp
 
 # personal additions
-/locales
 /assets
-*.ico

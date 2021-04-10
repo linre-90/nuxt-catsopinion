@@ -1,0 +1,162 @@
+{
+    "pages": {
+        "home": "Home",
+        "blog": "Blog",
+        "contact": "Contact",
+        "appz": "Appz"
+    },
+    "pageTexts":{
+        "home": "The only opinion cat owners need!",
+        "blog": "Our blog, find something to read!",
+        "contact": "Hit us with feedback!",
+        "appz": "The appz zone, play with the apps!",
+        "privacypolicy": "Privacy policy for you",
+        "blogreader": "Our post reader"
+    },
+    "footer": {
+        "sitemap": "Sitemap",
+        "some": "Social media",
+        "dev": "Juho Lindemark",
+        "poweredby": "Powered by"
+    },
+    "home": {
+        "headline": " Welcome to cats opinion blog!",
+        "p1": "On this blog we write everything cat related incorporation with Vilma.",
+        "p2": "Our blog is a little weird because it is produced with my cat, Vilma! Vilma is a very active cat. She has taken her place as the manager and brains behind this whole project.",
+        "p3": "We blog about our personal events, sometimes we look behind scenes and of course cat stuff! Cat stuff includes cat history, cat behaviour and also cat care tips and tricks. We also have appz section where we publish small browser based “apps” to play and learn more about cats!",
+        "p4": "Our page is relatively new and it was officially launched 10.3.2021! Jump aboard right at the beginning and follow our journey!",
+        "h4": "Also you can contact me or Vilma at the contact page. Follow us on Facebook and Twitter links are below!",
+        "signature": "- Juho - Vilma - "
+    },
+    "formPage": {
+        "headline": "Send questions for vilma or other feedback about the website. Please report bugs and broken links too!",
+        "noSpecialChar": "Please do not use any special characters that prevent form sending!",
+        "requiredItemsInfo": "* marked items are required",
+        "formHeader": "Headline: *",
+        "email": "Email:",
+        "typeOfFeedback": "Type of feedback: *",
+        "message": "Your message: *",
+        "submitBtn": "Submit",
+        "headlineplaceholder": "Max 20 characters",
+        "emaillaceholder": "Fill only if you want answer",
+        "errorWhenSendingMail": "There was an internal error, we suggest sending a direct email to dev@catsopinion.com.",
+        "errorInFilling": "There were illegal characters in your form or our bot detection thinks you are bot, refresh the page and please try again!",
+        "formSucces": "Your message has been received! Thank you for the feedback!",
+        "optionsheader": "--Select type",
+        "options1": "Bug report",
+        "options2": "Question",
+        "options3": "Other"
+    },
+    "privacypolicy": {
+        "timestamp": "Updated ",
+        "item1": {
+            "headline": "Cat's opinion's virtual strategy",
+            "text": "Cats' opinion wants to be a part of a new way of thinking web services. Our policy is to offer users safe experience and respect their privacy. This is why we don't collect any unnecessary data. We will be very open and informative about anything we might collect. Cats' opinion does not store users personal data (read email below).",
+            "quote": "-Website should be for user, user should not be data source!"
+        },
+        "item2": {
+            "headline": "What user data we store?",
+            "text": "Cat's Opinion does not collect or store any sensitive/personal user data! Cookies we use are strictly to ensure proper functionality of our site. Our cookies do not collect personal data and we do not share them to any 3rd party.",
+            "quote": ""
+        },
+        "item3": {
+            "headline": "Users email addresses",
+            "text": "Cat's Opinion does not store or distribute those email addresses to anyone. When a user wants to be contacted and leaves an email at the contact page, the email address is used only to communicate back to the user. After that email address will be removed from our systems permanently and never seen again. We do not store users email addresses to the database. Contacting can also be done anonymously or via email at dev@catsopinion.com. ",
+            "quote": ""
+        },
+        "item4": {
+            "headline": "What 3rd party cookies we have?",
+            "text": "None, we avoid using 3rd cookies as long it is possible!",
+            "quote": ""
+        },
+        "item5": {
+            "headline": "What are cat's opinions cookies?",
+            "text": "Our cookies are necessary because of the way our app is built. Our appid cookie for example is necessary for monitoring errors that might happen in our site. This helps us to pinpoint problems easily and it also protects our backend services. Our site is built on a serverless platform and this means that traditional logging is hard to implement. It is just a random set of characters and is not tied to the user in anyways. We also use cookies to store users language selection for better experience (cookie is essential for our language handler to work) and cookie consent just in case.",
+            "quote": ""
+        }
+        ,
+        "item6": {
+            "headline": "What is best type of cookie in world?",
+            "text": "Non digital, chocolate chip cookie!",
+            "quote": ""
+        }
+    },
+    "blogsite": {
+        "serachbar": {
+            "searcby": "Search by:",
+            "button": "Search",
+            "newest": "Newest",
+            "oldest": "Oldest"
+        },
+        "blogPostShower": {
+            "open": "Click to read full post"
+        },
+        "errorMessage": "No documents to show! If problem continues please contact us!",
+        "searchTermText":{
+            "start": "Showing results for search: ",
+            "default": "Newest"
+        }
+    },
+    "appPage": {
+        "card": {
+            "click": "Click card to open!",
+            "des": "Description"
+        }
+    },
+    "metadata": {
+        "titleStart": "Cats opinion | ",
+        "home": {
+            "title": " #1 Cat Blog in the World",
+            "description": "Cats opinion is new and modern cat blog! Learn about cats and get cat care tips. Try our apps and gain more information about cats!"
+        },
+        "blog": {
+            "title": "Learn About Cats In Blog",
+            "description": "It is all about cats. You will learn information about cats and get a peek into cats day to day life! Vilma the cat supervises everything we publish!"
+        },
+        "contact": {
+            "title": "Contact And Give Us Feedback!",
+            "description": "Tell us what went wrong or what was good! Any feedback will be highly appreciated by Cats opinion no matter if it is positive or negative."
+        },
+        "appz": {
+            "title": " Cat Apps Are Here!",
+            "description": "Cats opinion develops and publishes informative apps about cats! Apps are meant to be informative and fun! Try them out and don't forget to give us feedback!"
+        },
+        "privacypolicy": {
+            "title": "Our Privacy Policy For You",
+            "description": "Cats opinions privacy policy. Privacy is important for us and we want to be honest and transparent about what is going on."
+        }
+    },
+    "header": {
+        "home": "The only opinion cat owners need!",
+        "contact": "Hit us with feedback!",
+        "appz": "The appz zone, play with the apps!"
+    },
+    "cookiebanner": {
+        "header": "No unnecessary cookies for you!",
+        "p1": "Cat's opinion values your privacy! We don’t serve any unnecessary cookies or cookies that collect personal data!",
+        "p2": "Privacy policy can be found",
+        "link": "here",
+        "button": "Ok, that is awesome!"
+    },
+    "hotnews": {
+        "header": "What is new"
+    },
+    "errorInRoute": "Oh no, page you are looking for does not exists!",
+    "blogreader": {
+        "error": "Something went wrong, blog post not found",
+        "title": "Read our post!",
+        "meta": "This is special blog reader just for our site. with this tool you can read our blog posts and share them by copying link."
+    },
+    "blogReaderSetting": {
+        "darkMode": "Eye friendly mode?",
+        "settings": "Settings"
+    },
+    "copybtn": {
+        "button": "Copy url to clipboard",
+        "copied": "Copied to clipboard!"
+    },
+    "globalError":{
+        "headline": "ERROR: ",
+        "message": "Error happened in: "
+    }
+}

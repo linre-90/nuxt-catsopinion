@@ -1,0 +1,163 @@
+{
+    "pages": {
+        "home": "Koti",
+        "blog": "Blogi",
+        "contact": "Yhteys",
+        "appz": "Appz"
+    },
+    "pageTexts":{
+        "home": "Ainut mielipide, jonka kissan omistaja tarvitsee!",
+        "blog": "Meidän blogi, löydä luettavaa!",
+        "contact": "Lähetä meille palautetta!",
+        "appz": "Appi alue, kokeile ja leiki.",
+        "privacypolicy": "Yksityisyys käytäntömme on sinua varten",
+        "blogreader": "Blogi lukija"
+    },
+
+    "footer": {
+        "sitemap": "Sivukartta",
+        "some": "Sosiaalinen media",
+        "dev": "Juho Lindemark",
+        "poweredby": "Powered by"
+    },
+
+    "home": {
+        "headline": "Tervetuloa cats opinion blogi sivuille!",
+        "p1": "Tutustu blogiimme jossa kirjoitamme Vilman kanssa kaikesta kissoihin liittyvästä.",
+        "p2": "Blogimme on siitä erikoinen, että tuotamme sitä yhdessä kissani Vilman kanssa. Vilma on kovin aktiivinen tapaus ja on tietenkin operaation aivot sekä kiistaton johtotähti.",
+        "p3": "Bloggaamme niin henkilökohtaisia kuulumisia, kulissi kurkistuksia sekä tietenkin kissa asioita! Mm. kissojen historiaa, kissojen käytöstä ja käyttäytymistä sekä myös vinkkejä kissan hoitoon.  Blogimme sisältää myös appz osion jossa voi kokeilla kissoihin liittyviä selain sovelluksia!",
+        "p4": "Sivumme ovat  suhteellisen tuoreet ja se on avattu 10.3.2021. Hyppää jo heti alkuvaiheessa mukaan ja seuraa matkaamme!",
+        "h4": "Voit ottaa meihin yhteyttä ja jättää palautetta yhteys-sivulta! Seuraa meitä myös sosiaalisessa mediassa, linkit löytyvät alta!",
+        "signature": "- Juho - Vilma - "
+    },
+    "formPage": {
+        "headline": "Lähetä kysymyksiä Vilmalle tai muuta palautetta sivuista. Täällä voit myös raportoida bugeista esim jos joku linkki ei toimi!",
+        "noSpecialChar": "Älä käytä erikoismerkkejä se estää yhteydenoton lähettämisen!",
+        "requiredItemsInfo": "* merkityt kentät ovat pakollisia",
+        "formHeader": "Otsikko: *",
+        "email": "Sähköposti:",
+        "typeOfFeedback": "Yhteydenoton tyyppi: *",
+        "message": "Kirjoita viestisi: *",
+        "submitBtn": "Lähetä",
+        "headlineplaceholder": "Max 20 merkkiä",
+        "emaillaceholder": "Täytä vain jos haluat vastauksen",
+        "errorWhenSendingMail": "Tapahtui odottamaton sisäinen virhe, voit lähettää palautteesi sähköpostilla osoitteeseen: dev@catsopinion.com.",
+        "errorInFilling": "Käytit kiellettyjä merkkejä tai botti suojaus luulee sinua robotiksi, päivitä sivu ja yritä uudelleen!",
+        "formSucces": "Viestisi on vastaanotettu, kiitos palautteesta!",
+        "optionsheader": "--Valitse tyyppi",
+        "options1": "Bugiraportti",
+        "options2": "Kysymys",
+        "options3": "Muu"
+    },
+    "privacypolicy": {
+        "timestamp": "Päivitetty ",
+        "item1": {
+            "headline": "Cats opinionin yksityisyyskäytäntö",
+            "text": "Cats' opinion haluaa olla osallisena uudenlaisessa suhtautumisessa käyttäjän yksityisyyteen. Meidän tavoite on tarjota käyttäjälle turvallinen selaus kokemus ja kunnioittaa käyttäjän yksityisyyttä. Tämän takia emme kerää mitään ylimääräistä tietoa. Yritämme olla mahdollisimman avoimia ja kertoa rehellisesti mitä kerätään. Cats' opinion ei kerää yksityisiä tietoja käyttäjistä (katso sähköposti alla)",
+            "quote": "-Sivuston pitäisi olla olemassa käyttäjälle, eikä käyttäjän sivustolle!"
+        },
+        "item2": {
+            "headline": "Mitä tietoa tallennamme?",
+            "text": "Cats Opinion ei kerää tai tallenna mitään henkilökohtaista tietoa kävijöistä! Evästeet (cookie) joita käytämme ovat vain ja ainoastaan sivun toiminnan takia. Evästeet eivät kerää tietoja käyttäjästä ja emme jaa mitään tietoja kolmansille osapuolille.",
+            "quote": ""
+        },
+        "item3": {
+            "headline": "Käyttäjien sähköpostiosoitteet",
+            "text": "Cats Opinion ei varastoi tai myy osoitteita ulkopuolisille. Yhteys sivulla sähköpostiosoitteen antaminen on vapaaehtoista ja suositeltua jos haluaa viestiinsä vastauksen. Sähköpostiosoitetta säilytetään niin kauan kuin yhteydenpito sitä vaatii, tämän jälkeen se poistetaan järjestelmästämme eikä sitä enään ole Cats Opinionin hallussa. Emme tallenna osoitteita tietokantaan ja yhteydenotto on aina mahdollista myös anonyymisti. Sähköpostia voi meille lähettää myös suoraan osoitteeseen dev@catsopinion.com.",
+            "quote": ""
+        },
+        "item4": {
+            "headline": "Mitä 3 osapuolen evästeitä  meillä on?",
+            "text": "Ei mitään, emme käytä mitään kolmannen osapuolen evästeitä niin kauan kuin se on mahdollista sivuston toiminnan kannalta!",
+            "quote": ""
+        },
+        "item5": {
+            "headline": "What are cat's opinions cookies?",
+            "text": "Meidän asettamat evästeet ovat pakollisia johtuen siitä kuinka sivumme on rakennettu. Esimerkiksi appid eväste jonka asetamme auttaa virheiden selvittämisessä ja suojelee tausta palveluitamme. Sivumme on rakennettu “serverittömäksi”, joka tarkoittaa hieman hankalampaa lokitiedostojen (virheilmoitukset  ym.) keruuta. Appid eväste on ainoastaan satunnainen numero/kirjain sarja, sillä ei ole mitään sidoksia käyttäjään. Käytämme evästeitä myös käyttäjän kielivalinnan tallentamiseen (tämä on välttämätöntä jotta kieli koodimme pystyy näyttämään tekstiä). Lisäksi tallennamme evästeiden hyväksynnän vielä varmuuden vuoksi.",
+            "quote": ""
+        },
+        "item6": {
+            "headline": "Paras eväste/keksi(eng. cookie) maailmassa?",
+            "text": "Ei digitaalinen, amerikkalainen suklaahippukeksi!",
+            "quote": ""
+        }
+    },
+    "blogsite": {
+        "serachbar": {
+            "searcby": "Etsi kirjoituksia: ",
+            "button": "Etsi",
+            "newest": "Uusimmat",
+            "oldest": "Vanhimmat"
+        },
+        "blogPostShower": {
+            "open": "Klikkaa auki lukeaksesi koko kirjoituksen"
+        },
+        "errorMessage": "Voi ei, kirjoituksia ei löytynyt! Jos ongelma jatkuu lähetä palautetta!",
+        "searchTermText":{
+            "start": "Näytetään tulokset haulle: ",
+            "default": "Uusimmat"
+        }
+    },
+    "appPage": {
+        "card": {
+            "click": "Klikkaa kortista appi auki!",
+            "des": "Kuvaus"
+        }
+    },
+    "metadata": {
+        "titleStart": "Cats opinion | ",
+        "home": {
+            "title": "#1 Kissa Blogi Maailmassa",
+            "description": "Cats opinion on uusi ja moderni kissa aiheinen blogi! Sivuilta löydät kissan hoito vinkkejä ja mielenkiintoista tietoa kissoista. Psst. Kokeile myös appseja!"
+        },
+        "blog": {
+            "title": "Opi Kissoista Blogimme Avulla",
+            "description": "Kissa varoitus! Blogissa käsitellään pelkkiä kissoihin liittyviä asioita. Opit uusia faktoja ja seuraat Vilman päivittäistä elämää."
+        },
+        "contact": {
+            "title": "Ota yhteyttä ja lähetä palautetta!",
+            "description": "Kerro meille mikä meni vikaan tai mikä on hyvin. Kaikki palaute on tervetullutta oli se sitten positiivista tai negatiivista!"
+        },
+        "appz": {
+            "title": "Kissa Appseja Ja Sovelluksia Löytyy Täältä!",
+            "description": "Julkaisemme itse kehittämiämme hauskoja ja opettavaisia kissoihin liittyviä pelejä ja appseja! Testaa ja muista jättää palautetta!"
+        },
+        "privacypolicy": {
+            "title": "Tietosuojakäytäntömme On Juuri Sinua Varten",
+            "description": "Tietosuojakäytäntö johon me uskomme! Yksityisyys on tärkeää meille ja haluamme olla rehellisiä sekä läpinäkyviä siitä kuinka käsittelemme tietojasi."
+        }
+    },
+    "header": {
+        "home": "Ainoa mielipide jota kissan omistaja tarvitsee!",
+        "contact": "Lähetä meille palautetta!",
+        "appz": "Appi alue, pelaa ja kokeile!"
+    },
+    "cookiebanner": {
+        "header": "Ei turhia keksejä/evästeitä sinulle!",
+        "p1": "Cat's opinion arvostaa yksityisyyttä! Emme tarjoile turhia evästeitä tai evästeitä jotka keräävät henkilökohtaista tietoa.",
+        "p2": "Yksityisyys käytäntömme löytyy",
+        "link": "täältä",
+        "button": "Ok, mahtavaa!"
+    },
+    "hotnews": {
+        "header": "Uutiset"
+    },
+    "errorInRoute": "Voi ei, etsimääsi sivua ei ole olemassa!",
+    "blogreader": {
+        "error": "Etsimääsi postia ei ole olemassa!",
+        "title": "Lue meidän blogi postaus!",
+        "meta": "Tämä on juuri meidän sivua varten kehitetty blogin lukemis työkalu! Voit myös jakaa linkin suoraan kirjoitukseen."
+    },
+    "blogReaderSetting": {
+        "darkMode": "Silmä ystävällinen tila?",
+        "settings": "Asetukset"
+    },
+    "copybtn": {
+        "button": "Kopioi sivun url osoite",
+        "copied": "Kopioitu leikepöydälle!"
+    },
+    "globalError": {
+        "headline": "VIRHE: ",
+        "message": "Virhe tapahtui: "
+    }
+}
