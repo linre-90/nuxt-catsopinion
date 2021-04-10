@@ -111,7 +111,13 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    '/log': process.env.MY_URL,
+    '/submitvalidate': process.env.MY_URL
+  },
 
   publicRuntimeConfig:{
     newsFi: process.env.NEWS_FI,
