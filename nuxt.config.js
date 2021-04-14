@@ -98,6 +98,7 @@ export default {
         "/S0Cs1r1zSmrITXGqrymx/en/blogreader",
         "/kSHJAFntpeza1a4pxAEs/en/blogreader",
         "/Q3pFJ8twnW7fw03iOhkl/en/blogreader",
+        "/Z2KA0Bb7PCLQeTJ3EU0I/en/blogreader",
         /*FI */
         "/fi/5LeiwDXK8907D5uk1vhx/fi/blogreader",
         "/fi/g8rSoAohs1yPJRz7Pa25/fi/blogreader",
@@ -105,7 +106,8 @@ export default {
         "/fi/5E8q36n4HGPtiegoX3vi/fi/blogreader",
         "/fi/Sjy3kuwUlfbVXJVDlRq9/fi/blogreader",
         "/fi/4AV3LEjycyruU1U11b4z/fi/blogreader",
-        "/fi/sAYQdD47d8pXZu7Pzuas/fi/blogreader"
+        "/fi/sAYQdD47d8pXZu7Pzuas/fi/blogreader",
+        "/fi/3BpLCRz0BsxDc7iVbUGW/fi/blogreader"
       ]
     }]
   ],
