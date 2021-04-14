@@ -26,7 +26,7 @@ export default {
     data() {
         return {
             //! Insert series names here
-            series: ["Personal", "What is my cat?"],
+            series: [/*"Personal", "What is my cat?"*/],
             searcTerm: "Newest",
         };
     },
@@ -46,6 +46,27 @@ export default {
             return queryType;
         },
     },
+    async fetch(){
+        let data = await this.$queryFullCollection({collection: "series", locale: "en"});
+        if(data[0] === "error"){
+            this.$axios.post("/log", {
+                "appid":this.$cookies.get("appid"),
+                "time": new Date(),
+                "logtype": this.$logTypes("error"),
+                "visitedpage": this.$route.path,
+                "locale": this.$cookies.get("language"),
+                "device": process.client ? window.innerWidth : "UNKNOWN",
+                "link": "Fetch in blog search bar",
+                "detail": data[1] + ": " + data[2],
+                "cookies": this.$cookies.get("cookieConsent")
+            },{params:{"appid": this.$cookies.get("appid")}}).then();
+        }
+        else{
+            data.forEach((element) => {
+                this.series.push(element.name);
+            })
+        }
+    }
 };
 </script>
 

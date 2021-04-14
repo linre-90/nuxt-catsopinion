@@ -122,6 +122,7 @@ export default {
   publicRuntimeConfig:{
     newsFi: process.env.NEWS_FI,
     newsEn: process.env.NEWS_EN,
+    series_env: process.env.SERIES,
     messageCollection: process.env.MESSAGE_COLLECTION,
     blogEn: process.env.EN_BLOGPOSTS,
     blogFi: process.env.FI_BLOGPOSTS,

@@ -1,10 +1,13 @@
 // actual collection name comes from nuxt.config.js and it gets collection name from .env file
 const collections_fi = {
-    "news": "newsFi"
+    "news": "newsFi",
+    "series": "series_env"
 }
 
 const collections_en = {
-    "news": "newsEn"
+    "news": "newsEn",
+    "series": "series_env"
+    
 }
 
 /** 

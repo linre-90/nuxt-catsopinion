@@ -139,7 +139,7 @@ export default {
                     "locale": this.$cookies.get("language"),
                     "device": process.client ? window.innerWidth : "UNKNOWN",
                     "link": "getPostsByQuery in blog",
-                    "detail": response,
+                    "detail": data,
                     "cookies": this.$cookies.get("cookieConsent")
                 },{params:{"appid": this.$cookies.get("appid")}}).then();
             }else{
