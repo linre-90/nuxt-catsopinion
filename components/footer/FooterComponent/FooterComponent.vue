@@ -12,8 +12,6 @@
     </span>
     <span v-if="socialMedia.length > 0">
         <div class="socialMediaSeperator"></div>
-        <Facebook></Facebook>
-        <div class="socialMediaSeperator"></div>
         <Twitter></Twitter>
     </span>
 </div>
@@ -21,14 +19,13 @@
 
 
 <script>
-import Facebook from "../../socialMedia/Facebook";
 import Twitter from "../../socialMedia/Twitter";
 
 export default {
   name: "FooterComponent",
   props: { header: String, icon: String, links: Array, socialMedia: Array },
   components:{
-      Facebook, Twitter
+        Twitter
   }
   
 };

@@ -18,7 +18,7 @@
                 header="footer.some"
                 icon="fas fa-bell"
                 v-bind:links="[]"
-                :socialMedia="['twitter', 'facebook']"
+                :socialMedia="['twitter']"
             />
             <FooterComponent
                 header="footer.dev"
