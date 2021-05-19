@@ -20,12 +20,11 @@
         "poweredby": "Powered by"
     },
     "home": {
-        "headline": " Welcome to cats opinion blog!",
+        "headline": " Welcome to cat's opinion!",
         "p1": "On this blog we write everything cat related incorporation with Vilma.",
-        "p2": "Our blog is a little weird because it is produced with my cat, Vilma! Vilma is a very active cat. She has taken her place as the manager and brains behind this whole project.",
-        "p3": "We blog about our personal events, sometimes we look behind scenes and of course cat stuff! Cat stuff includes cat history, cat behaviour and also cat care tips and tricks. We also have appz section where we publish small browser based “apps” to play and learn more about cats!",
-        "p4": "Our page is relatively new and it was officially launched 10.3.2021! Jump aboard right at the beginning and follow our journey!",
-        "h4": "Also you can contact me or Vilma at the contact page. Follow us on Facebook and Twitter links are below!",
+        "p2": "Our blog is a little weird because it is superviced by my cat, Vilma! Vilma is a very active cat. She has taken her place as the manager and brains behind this whole project.",
+        "p3": "We blog about our personal events, sometimes we look behind scenes and of course cat stuff! Cat stuff includes cat history, cat behaviour and also cat care tips and tricks. We also have appz section where we publish small interactive browser based “apps” to play and learn more about cats!",
+        "h4": "Also you can contact me or Vilma at the contact page. Follow us on Twitter link is below in the footer section!",
         "signature": "- Juho - Vilma - "
     },
     "formPage": {

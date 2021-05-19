@@ -22,12 +22,11 @@
     },
 
     "home": {
-        "headline": "Tervetuloa cats opinion blogi sivuille!",
+        "headline": "Tervetuloa cat's opinion sivuille!",
         "p1": "Tutustu blogiimme jossa kirjoitamme Vilman kanssa kaikesta kissoihin liittyvästä.",
         "p2": "Blogimme on siitä erikoinen, että tuotamme sitä yhdessä kissani Vilman kanssa. Vilma on kovin aktiivinen tapaus ja on tietenkin operaation aivot sekä kiistaton johtotähti.",
-        "p3": "Bloggaamme niin henkilökohtaisia kuulumisia, kulissi kurkistuksia sekä tietenkin kissa asioita! Mm. kissojen historiaa, kissojen käytöstä ja käyttäytymistä sekä myös vinkkejä kissan hoitoon.  Blogimme sisältää myös appz osion jossa voi kokeilla kissoihin liittyviä selain sovelluksia!",
-        "p4": "Sivumme ovat  suhteellisen tuoreet ja se on avattu 10.3.2021. Hyppää jo heti alkuvaiheessa mukaan ja seuraa matkaamme!",
-        "h4": "Voit ottaa meihin yhteyttä ja jättää palautetta yhteys-sivulta! Seuraa meitä myös sosiaalisessa mediassa, linkit löytyvät alta!",
+        "p3": "Bloggaamme niin henkilökohtaisia kuulumisia, kulissi kurkistuksia sekä tietenkin kissa asioita! Mm. kissojen historiaa, kissojen käytöstä ja käyttäytymistä sekä myös vinkkejä kissan hoitoon. Blogimme sisältää myös appz osion jossa voi kokeilla kissoihin liittyviä interaktiivisia selain sovelluksia!",
+        "h4": "Voit ottaa meihin yhteyttä ja jättää palautetta yhteys-sivulta! Seuraa meitä myös sosiaalisessa mediassa, linkki Twitteriimme löytyy alta!",
         "signature": "- Juho - Vilma - "
     },
     "formPage": {

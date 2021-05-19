@@ -1,15 +1,12 @@
 <template>
     <div>
         <Divider />
-        <h3>Our appz are temporary not available. We improve our page and seperate appz from the main project. Follow social media for updates about appz return.</h3>
-        <h3>Appzit on tilapäisesti pois käytöstä, parannamme sivustoamme ja apsit erotetaan perus projektista kokonaan. Seuraa somea ilmoitamme, kun apsit ovat taas saatavilla.</h3>
-        <!--TODO when app is ready CHANGE "this.appz.length > 0"-->
-        <div class="cardContainer " v-if="this.appz.length > 1">
+        <div class="cardContainer " v-if="this.appz.length > 0">
                 <AppCard
                 v-for="app in this.appz"
                 :key="app.name"
                 :name="app.appName"
-                :description="app.appDescription"
+                :description="app[`appDescription_${$i18n.locale}`]"
                 :url="app.appurl"
                 :image="app.appImage"
             />

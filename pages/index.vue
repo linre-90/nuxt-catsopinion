@@ -6,7 +6,6 @@
             <p>{{ $t("home.p1") }}</p>
             <p>{{ $t("home.p2") }}</p>
             <p>{{ $t("home.p3") }}</p>
-            <p>{{ $t("home.p4") }}</p>
             <h4>{{ $t("home.h4") }}</h4>
             <h4>{{ $t("home.signature") }}<i class="fas fa-paw animate__animated animate__bounceIn animate__repeat-3"></i></h4>
             <Divider />
