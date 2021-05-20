@@ -1,4 +1,5 @@
 <template>
+
     <a class="wrapper link animate__animated animate__bounceIn" :href="url" name="appcard">
         <h2>{{ name }}</h2>
         <Divider />
@@ -27,7 +28,7 @@ export default {
             setTimeout(() => {
                 document.getElementsByName("appcard").forEach((e) => {
                     e.classList.remove("animate__animated"),
-                        e.classList.remove("animate__bounceIn");
+                    e.classList.remove("animate__bounceIn");
                 });
             }, 1000);
         },
@@ -57,7 +58,7 @@ p {
 }
 .wrapper:hover {
     background-color: #67595e;
-    animation: shakeY;
+    animation: pulse;
     animation-iteration-count: 1;
     animation-duration: 1s;
 }

@@ -1,6 +1,9 @@
 <template>
     <div>
         <Divider />
+        <client-only>
+            <LoadinIcon size="medium" v-if="loading" />
+        </client-only>
         <div class="cardContainer " v-if="this.appz.length > 0">
                 <AppCard
                 v-for="app in this.appz"
@@ -18,6 +21,7 @@
 <script>
 import Divider from "../components/Divider/Divider";
 import AppCard from "../components/AppCard/AppCard";
+import LoadinIcon from "../components/loadingIcon/LoadinIcon";
 export default {
     /**
      * Page component displays apps in flex container!
@@ -27,6 +31,7 @@ export default {
     components: {
         Divider,
         AppCard,
+        LoadinIcon
     },
     async fetch(){
         try {
@@ -37,6 +42,7 @@ export default {
                 data.push(objectToPush);
             });
             this.appz = data;
+            this.loading = false;
         } catch (error) {
             this.$axios.post("/log", {
                 "appid":this.$cookies.get("appid"),
@@ -48,7 +54,7 @@ export default {
                 "link": "fetch in appz",
                 "detail": error,
                 "cookies": this.$cookies.get("cookieConsent")
-            },{params:{"appid": this.$cookies.get("appid")}}).then();
+            },{params:{"appid": this.$cookies.get("appid")}}).then(this.loading = false);
         }
     },
     head(){
@@ -66,6 +72,7 @@ export default {
     data() {
         return {
             appz: [],
+            loading: true
         };
     },
     activated(){

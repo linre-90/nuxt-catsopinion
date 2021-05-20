@@ -60,18 +60,7 @@
                 v-bind:links="[
                     { text: 'Nuxt.js', url: 'https://nuxtjs.org/' },
                     { text: 'Animate.css', url: 'https://animate.style/' },
-                    {
-                        text: 'AWS Lambda',
-                        url: 'https://aws.amazon.com/lambda/',
-                    },
-                    {
-                        text: 'AWS Api-gateaway',
-                        url: 'https://aws.amazon.com/api-gateway/',
-                    },
-                    {
-                        text: 'Google Firebase',
-                        url: 'https://firebase.google.com/',
-                    },
+                    { text: 'Google Firebase', url: 'https://firebase.google.com/',},
                 ]"
                 v-bind:socialMedia="[]"
             />
