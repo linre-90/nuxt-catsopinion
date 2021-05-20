@@ -31,7 +31,7 @@
     },
     "formPage": {
         "headline": "Lähetä kysymyksiä Vilmalle tai muuta palautetta sivuista. Täällä voit myös raportoida bugeista esim jos joku linkki ei toimi!",
-        "noSpecialChar": "Älä käytä erikoismerkkejä se estää yhteydenoton lähettämisen!",
+        "noSpecialChar": "Älä käytä erikoismerkkejä, se estää yhteydenoton lähettämisen! (Huutomerkki, piste ja pilkku ovat sallittuja)",
         "requiredItemsInfo": "* merkityt kentät ovat pakollisia",
         "formHeader": "Otsikko: *",
         "email": "Sähköposti:",

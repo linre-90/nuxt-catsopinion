@@ -194,7 +194,7 @@ export default {
                             },{params:{"appid": this.$cookies.get("appid")}}).then();
 
                         });                    
-                    if(typeof axiosResponse !== "undefined" && axiosResponse.data === 200){
+                    if(typeof axiosResponse !== "undefined" && axiosResponse.status === 200){
                         // form was succesfully submitted
                         this.removeAuth()
                         this.loading = false;

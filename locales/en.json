@@ -29,7 +29,7 @@
     },
     "formPage": {
         "headline": "Send questions for vilma or other feedback about the website. Please report bugs and broken links too!",
-        "noSpecialChar": "Please do not use any special characters that prevent form sending!",
+        "noSpecialChar": "Please do not use any special characters, that will prevent form sending! (Period, exclamation mark and comma are allowed)",
         "requiredItemsInfo": "* marked items are required",
         "formHeader": "Headline: *",
         "email": "Email:",
