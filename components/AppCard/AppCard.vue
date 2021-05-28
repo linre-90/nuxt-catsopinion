@@ -31,7 +31,6 @@ export default {
                 });
             }, 1000);
         },
-        /** A tag causes "The client-side rendered virtual DOM tree is not matching server-rendered content." error/warn... */
         openApp(){
             this.$axios.post("/log", {
                 "appid":this.$cookies.get("appid"),
@@ -47,7 +46,6 @@ export default {
             const newTab = window.open();
             newTab.opener = null;
             newTab.location = this.url;
-            //window.open(this.url);
         }
     },
     mounted() {
