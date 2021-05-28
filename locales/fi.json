@@ -99,7 +99,7 @@
     },
     "appPage": {
         "card": {
-            "click": "Klikkaa kortista appi auki!",
+            "click": "Klikkaa kortista appi auki! (Avautuu uudessa välilehdessä)",
             "des": "Kuvaus"
         }
     },

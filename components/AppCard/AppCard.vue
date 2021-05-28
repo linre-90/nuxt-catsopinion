@@ -1,6 +1,5 @@
 <template>
-
-    <a class="wrapper link animate__animated animate__bounceIn" :href="url" name="appcard">
+    <a class="wrapper link animate__animated animate__bounceIn" @click="openApp()" name="appcard">
         <h2>{{ name }}</h2>
         <Divider />
         <img :src="image" alt="image about app" />
@@ -32,10 +31,29 @@ export default {
                 });
             }, 1000);
         },
+        /** A tag causes "The client-side rendered virtual DOM tree is not matching server-rendered content." error/warn... */
+        openApp(){
+            this.$axios.post("/log", {
+                "appid":this.$cookies.get("appid"),
+                "time": new Date(),
+                "logtype": this.$logTypes("app"),
+                "visitedpage": this.url,
+                "locale": this.$cookies.get("language"),
+                "device": process.client ? window.innerWidth : "UNKNOWN",
+                "link": "App card click",
+                "detail": this.name,
+                "cookies": this.$cookies.get("cookieConsent")
+            },{params:{"appid": this.$cookies.get("appid")}}).then();
+            const newTab = window.open();
+            newTab.opener = null;
+            newTab.location = this.url;
+            //window.open(this.url);
+        }
     },
     mounted() {
         this.removeAnimation();
     },
+    
 };
 </script>
 

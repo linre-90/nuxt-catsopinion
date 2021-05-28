@@ -7,8 +7,8 @@
     <span v-if="links.length > 0">
         <span v-for="(text, url, routerLink) in links" :key="(text, url, routerLink)">
             <nuxt-link  v-if="text.routerLink" :to="localePath(`${text.url}`)" >{{ text.text }}</nuxt-Link>
-            <a v-else :href="`${text.url}`" >{{ text.text }}</a>
-        </span>  
+            <a v-else :href="`${text.url}`" rel="noopener">{{ text.text }}</a>
+        </span>
     </span>
     <span v-if="socialMedia.length > 0">
         <div class="socialMediaSeperator"></div>

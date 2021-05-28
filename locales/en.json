@@ -98,7 +98,7 @@
     },
     "appPage": {
         "card": {
-            "click": "Click card to open!",
+            "click": "Click card to open! (Opens in new tab)",
             "des": "Description"
         }
     },
