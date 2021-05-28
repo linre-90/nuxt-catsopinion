@@ -2,6 +2,7 @@ const app = require('express')()
 const express = require("express");
 const infoHeaders = ["PAGE_VISIT", "APP_LAUNCH", "BLOG_POST_READ", "CLICK"];
 const errorHeaders = ["ERROR"];
+const warningHEaders = ["WARNING"];
 
 app.use(express.json());
 
@@ -13,6 +14,9 @@ app.post('/', async (req, res) => {
         }
         else if(errorHeaders.includes(req.body.logtype)){
             console.error(req.body);
+        }
+        else if(warningHEaders.includes(req.body.logtype)){
+            console.warn(req.body);
         }
         else{
             console.warn(
@@ -31,6 +35,7 @@ app.post('/', async (req, res) => {
     res.setHeader("x-content-type-options", "nosniff");
     res.setHeader("x-frame-options", "SAMEORIGIN");
     res.setHeader("x-xss-protection", "1; mode=block");
+    res.setHeader("x-powered-by", "someTech");
     res.sendStatus(200);
 })
 

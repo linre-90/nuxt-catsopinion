@@ -19,6 +19,8 @@ export default function({app}, inject){
             case "click":
                 returnType = "CLICK"
                 break;
+            case "warn":
+                returnType = "WARNING"
             default:
                 break;
         }

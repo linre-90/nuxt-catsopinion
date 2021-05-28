@@ -25,6 +25,7 @@ app.post('/', async (req, res) => {
     res.setHeader("x-content-type-options", "nosniff");
     res.setHeader("x-frame-options", "SAMEORIGIN");
     res.setHeader("x-xss-protection", "1; mode=block");
+    res.setHeader("x-powered-by", "someTech");
     if(req.body){         
         let validateName = true;
         if(req.body.axiosData.name.length > 0){

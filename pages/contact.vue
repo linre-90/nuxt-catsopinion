@@ -164,6 +164,19 @@ export default {
         async submitForm(e) {
             let fillTime = Date.now();
             if (this.formIsValid) {
+                // log that there was try to send form
+                this.$axios.post("/log", {
+                                "appid":this.$cookies.get("appid"),
+                                "time": new Date(),
+                                "logtype": this.$logTypes("click"),
+                                "visitedpage": this.$route.path,
+                                "locale": this.$cookies.get("language"),
+                                "device": process.client ? window.innerWidth : "UNKNOWN",
+                                "link": "Submit",
+                                "detail": "User tried to submit contact form",
+                                "cookies": this.$cookies.get("cookieConsent")
+                },{params:{"appid": this.$cookies.get("appid")}}).then();
+
                 this.loading = true;
                 // log in anonymously
                 await this.$fire.auth.signInAnonymously().catch((error) => {});
@@ -177,7 +190,7 @@ export default {
                         name: e.target.name.value || "",
                         fillTime: Math.floor((fillTime - this.timeStamp) / 1000),
                     }
-                    // validate data in cloud and submit
+                    // validate data in server and submit
                     const axiosResponse = await this.$axios
                         .post("/submitvalidate",{ axiosData }, {params:{"appid":this.$cookies.get("appid")}})
                         .catch((error) => {
@@ -208,6 +221,17 @@ export default {
                         this.loading = false;
                         this.errormessage = this.$t("formPage.errorInFilling");
                         this.error = true;
+                        this.$axios.post("/log", {
+                                "appid":this.$cookies.get("appid"),
+                                "time": new Date(),
+                                "logtype": this.$logTypes("warn"),
+                                "visitedpage": this.$route.path,
+                                "locale": this.$cookies.get("language"),
+                                "device": process.client ? window.innerWidth : "UNKNOWN",
+                                "link": "form submit",
+                                "detail": "Form validation error. Form evaluated to false.",
+                                "cookies": this.$cookies.get("cookieConsent")
+                        },{params:{"appid": this.$cookies.get("appid")}}).then();
                     }
                 }
             }
