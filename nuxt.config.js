@@ -103,6 +103,8 @@ export default {
         "/wpGTN4tY9GOthlJuf6wU/en/blogreader",
         "/ZrzfwrC0GUhk0EFTbJFu/en/blogreader",
         "/jamVjVGaYNhgFUMNuRwE/en/blogreader",
+        "/TBe7EstTMUvsfpabROWe/en/blogreader",
+      
         /*FI */
         "/fi/5LeiwDXK8907D5uk1vhx/fi/blogreader",
         "/fi/g8rSoAohs1yPJRz7Pa25/fi/blogreader",
@@ -115,7 +117,8 @@ export default {
         "/fi/2GkIUneDfOvmL7wdHDnt/fi/blogreader",
         "/fi/YQdLknRY696s8vMxCei4/fi/blogreader",
         "/fi/yigFvNFCf1Fd6qfGFKew/fi/blogreader",
-        "/fi/qWnNOzHcGPoS0Rh3OJBr/fi/blogreader"
+        "/fi/qWnNOzHcGPoS0Rh3OJBr/fi/blogreader",
+        "/fi/hORTyRdaQ248gqE4KUJp/fi/blogreader"
       ]
     }]
   ],
