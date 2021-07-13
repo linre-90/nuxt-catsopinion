@@ -38,7 +38,7 @@
         "submitBtn": "Submit",
         "headlineplaceholder": "Max 20 characters",
         "emaillaceholder": "Fill only if you want answer",
-        "errorWhenSendingMail": "There was an internal error, we suggest sending a direct email to dev@catsopinion.com.",
+        "errorWhenSendingMail": "There was an internal error, we suggest sending a direct email to webcatsopinion@gmail.com.",
         "errorInFilling": "There were illegal characters in your form or our bot detection thinks you are bot, refresh the page and please try again!",
         "formSucces": "Your message has been received! Thank you for the feedback!",
         "optionsheader": "--Select type",

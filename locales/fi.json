@@ -40,7 +40,7 @@
         "submitBtn": "Lähetä",
         "headlineplaceholder": "Max 20 merkkiä",
         "emaillaceholder": "Täytä vain jos haluat vastauksen",
-        "errorWhenSendingMail": "Tapahtui odottamaton sisäinen virhe, voit lähettää palautteesi sähköpostilla osoitteeseen: dev@catsopinion.com.",
+        "errorWhenSendingMail": "Tapahtui odottamaton sisäinen virhe, voit lähettää palautteesi sähköpostilla osoitteeseen: webcatsopinion@gmail.com.",
         "errorInFilling": "Käytit kiellettyjä merkkejä tai botti suojaus luulee sinua robotiksi, päivitä sivu ja yritä uudelleen!",
         "formSucces": "Viestisi on vastaanotettu, kiitos palautteesta!",
         "optionsheader": "--Valitse tyyppi",
