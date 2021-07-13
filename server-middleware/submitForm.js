@@ -12,7 +12,7 @@ const messageSchema = joi.object({
     type: joi.string().valid("bug", "question", "other"),
     email: joi.string().email().pattern(regex).allow(null, ""),
     message: joi.string().min(20).max(400).pattern(regex),
-    time: joi.number().integer().min(1)
+    time: joi.number().integer().min(15)
 });
 
 
