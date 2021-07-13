@@ -1,16 +1,18 @@
 const app = require('express')()
 const express = require("express");
-const axios = require("axios");
-const nodemailer = require("nodemailer");
+//const axios = require("axios");
+//const nodemailer = require("nodemailer");
 const joi = require("joi");
 const regex = /^[^<>\/":;$';={}&*]+$/;
+const firebase = require("firebase");
+require("firebase/firestore");
 
 const messageSchema = joi.object({
     headline: joi.string().min(1).max(20).pattern(regex),
     type: joi.string().valid("bug", "question", "other"),
     email: joi.string().email().pattern(regex).allow(null, ""),
     message: joi.string().min(20).max(400).pattern(regex),
-    time: joi.number().integer().min(15)
+    time: joi.number().integer().min(1)
 });
 
 
@@ -42,37 +44,20 @@ app.post('/', async (req, res) => {
             { stripUnknown: true }
         );
         if (!error && validateName) {
-            let transporter;
-            const mail = {
-                from: req.body.axiosData.email || "emptySender@catsopinion.com", 
-                to: process.env.RECEIVER, 
-                subject: req.body.axiosData.type + "  /  " + req.body.axiosData.headline, 
-                message: req.body.axiosData.message
-            }
-            try {
-                transporter = nodemailer.createTransport({
-                    host: process.env.SMTP_HOST,
-                    port: process.env.SMTP_PORT,
-                    auth:{
-                        user: process.env.USER,
-                        pass: process.env.SMTP_KEY
-                    }
-                });
-
-                await transporter.sendMail({
-                    from: mail.from,
-                    to:mail.to,
-                    subject:mail.subject,
-                    message:mail.message,
-                    html: `<p>${mail.message}</p>`
-                });
-                transporter.close();
-                res.sendStatus(200);
-            } catch (error) {
-                if(transporter){
-                    transporter.close();
-                }
-                res.sendStatus(500);
+            const db = firebase.firestore();
+            if(db){
+                db.collection(process.env.MESSAGE_COLLECTION).add({
+                    email: req.body.axiosData.email || "emptySender@catsopinion.com",
+                    headline: req.body.axiosData.type + "  /  " + req.body.axiosData.headline,
+                    message: req.body.axiosData.message
+                })
+                .then(() => {res.sendStatus(200)})
+                .catch((error) => {
+                    console.log(error);
+                    res.sendStatus(500)}
+                );
+            }else{
+                console.error("Firebase error");
             }
         } else {
             res.sendStatus(422);
@@ -80,7 +65,43 @@ app.post('/', async (req, res) => {
     }else{
         res.sendStatus(400);
     }
-
 });
 
 module.exports = app
+
+/** Example using mailserver, does not need anymore that messages are saved to db. Stored for future reference */
+/* <-- Mail option using mail service --> */
+/*let transporter;
+const mail = {
+    from: req.body.axiosData.email || "emptySender@catsopinion.com", 
+    to: process.env.RECEIVER, 
+    subject: req.body.axiosData.type + "  /  " + req.body.axiosData.headline, 
+    message: req.body.axiosData.message
+}
+try {
+    transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        auth:{
+            user: process.env.USER,
+            pass: process.env.SMTP_KEY
+        }
+    });
+
+    await transporter.sendMail({
+        from: mail.from,
+        to:mail.to,
+        subject:mail.subject,
+        message:mail.message,
+        html: `<p>${mail.message}</p>`
+    });
+    transporter.close();
+    res.sendStatus(200);
+} catch (error) {
+    if(transporter){
+        transporter.close();
+    }
+    res.sendStatus(500);
+}*/
+/* <--/ Mail option using mail service --> */
+
